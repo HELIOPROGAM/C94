@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C92</title>
+<link rel="stylesheet" href="style.css">
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<!-- Primeiro, precisamos adicionar uma class à tag body.
+➔ Adicionando a class bodyBackground à tag body adicionará o background a página
+HTML.
+➔ CSS já foi definido para essa class em style.css. Você apenas precisa adicionar a
+class: -->
+
+<body class="bodyBackground">
+	<center>
+		<!-- Agora, adicione a class bootstrap à tag h2. -->
+<!-- ➔ btn-primary adicionará um fundo azul com a fonte em branco. -->
+		<h2 class="btn-primary">MINECRAFT</h2>
+
+		<!-- Agora, adicione a class bootstrap à tag div.
+➔ btn-danger adicionará um fundo vermelho com a fonte em branco. -->
+		<div id="headInfo" class="btn-danger">
+		
+		<!-- Agora, adicione duas tags span dentro das tags h3 e forneça ids a elas.
+➔ Essas tags span serão utilizadas para mostrar a width e height dos blocos (tais como,
+parede, madeira e outros), na tela, enquanto os aumentamos ou diminuímos.
+➔ Ajuste o texto para 30 a ambas tags span. Pois, quando iniciarmos, ajustaremos a
+height e width dos blocos em 30px. -->
+			
+			<h3>Largura atual  = <span id="currentWidth">30</span></h3>
+			<h3>Altura atual  = <span id="currentHeight">30</span></h3>
+		</div>
+
+		<canvas width="1000" height="600" id="myCanvas"></canvas>
+
+	</center>
+	<script src="main.js"></script>
+</body>
+</html>
